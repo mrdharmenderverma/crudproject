@@ -21,7 +21,7 @@ class EmployeeController extends Controller
     $validator = Validator::make($request->all(),[
         'name' => 'required',
         'email' => 'required',
-        'image' => 'somtimes|image:gif,png,jpeg,jpg'
+        'image' => 'required'
     ]);
     if($validator->passes()){
 
